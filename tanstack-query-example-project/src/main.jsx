@@ -9,6 +9,7 @@ import WithoutQuery from "./pages/WithoutQuery.jsx";
 import WithQuery from "./pages/WithQuery.jsx";
 import Post from "./pages/Post.jsx";
 import WithInfiniteQuery from "./pages/WithInfiniteQuery.jsx";
+import Tasks from "./pages/Tasks.jsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   { path: "/withquery", element: <WithQuery /> },
   { path: "/withquery/:id", element: <Post /> },
   { path: "/withinfinitequery", element: <WithInfiniteQuery /> },
+  { path: "/tasks", element: <Tasks /> },
 ]);
 
 const queryClient = new QueryClient();
